@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montez&family=Montserrat&display=swap" rel="stylesheet">
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!--css personalizado-->
+        <link href="indexcss.css" rel="stylesheet">
+
+        <title>Psyche</title>
+    </head>
+
+    <body>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+        <nav class="navbar navbar-expand-lg bg-ligth " id="navbar">
+            <div class="container-fluid">
+                <!---<img src="https://cdn-icons-png.flaticon.com/128/1787/1787077.png" alt="Logo" width="30" height="24"
+                     class="d-inline-block align-text-top">-->
+                <a class="navbar-brand" href="#"><span id="titulo">Psyche</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-current="page" href="#">Especialistas</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><b>Sobre nosotros</b></a>
+                        </li>
+                       <!-- <li class="nav-item">
+                            <button type="button" class="btn btn-primary " disabled>crar cuenta de doctor</button>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row" id="fondo">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5 centrado" id="izquierda">
+                <div style="color:black ;">
+                    <h1 style="font-size: 3rem;">Bienvenido a Psyche</h1><br>
+                    <h3>Trabajamos para que este bien, sin necesidad de que se desgaste</h3>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6  centrado" id="derecha">
+                <div class="div_bonito centrado" id="login">
+
+                    <form name="inicio-secion" method="post" action="val_usr_login.jsp">
+                        <h1 id="title">Iniciar Sesión</h1>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="TxtUsr" name="TxtUsr" required>
+                            <div id="emailHelp" class="form-text">Escriba su nombre de usuario registrado anteriormente</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="TxtPsw" name="TxtPsw" required>
+                        </div>
+
+                        <a class="btn btn-secondary" href='Registro.jsp'>Crear cuenta</a>
+                        <button type="submit" class="btn btn-primary" style="background-color: #B88D86; border-color: #B88D86;">Iniciar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

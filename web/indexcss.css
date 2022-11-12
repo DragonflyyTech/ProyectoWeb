@@ -1,0 +1,36 @@
+.centrado{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #EBE8E1;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+#navbar{
+    background-color: white;
+}
+#izquierda{
+    
+    background-color: #A2B6CE;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+#derecha{
+    height: 700px;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+#login{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    
+}
+#title{
+    text-align: center;
+}

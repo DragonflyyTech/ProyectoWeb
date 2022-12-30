@@ -1,0 +1,130 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    font-family: 'Nunito', sans-serif;
+}
+#fechita{
+    display:none;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+#fond{
+    margin-top:3em;
+    background-color:#EBE8E1 ;
+    border-radius: 10px;
+    margin-bottom: 5em;
+   box-shadow: 0px 0px 10px gray;
+}
+
+#col1{
+    width: 100%;
+    
+}
+#col2{
+    width: 100%;
+    
+}
+#col3{
+    width: 100%;
+}
+
+#caritas{
+    width:95%;
+    height: 250px;
+    border-radius: 15px;
+}
+#caritas input{
+  display:none;
+}
+#caritas input:checked + span{
+    background-color: #9AB7C1;
+}
+#caritas label{
+    width:120px ;
+    height: 120px ;
+    border-radius: 100%;
+}
+#feliz{    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3688/3688033.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: inline-block;
+}
+#normal{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3688/3688019.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: inline-block;
+}
+#triste{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3688/3688082.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: inline-block;
+}
+#conflictuado{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3688/3688134.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: inline-block;
+}
+#enojado{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3688/3688091.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: inline-block;
+}
+
+#texto{
+    width:95%;
+    border-radius: 15px;
+    background-color:white;
+    height:600px;
+    box-shadow:  0px 0px 20px #D4CAC6;
+}
+#titulo_D{
+    border: none;
+    appearance: none;
+    border-bottom: 5px;
+}
+#titulo_D:focus{
+    box-shadow: none;
+}
+#cont-dia{
+    border: none;
+    appearance: none;
+    height:400px;
+}
+#cont-dia:focus{
+    box-shadow: none;
+}
+
+#col4{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}

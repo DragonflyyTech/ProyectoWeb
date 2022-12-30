@@ -1,0 +1,69 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#caja_chat{
+    width: 60%;
+    height:650px;
+    margin-top:4em;
+    margin-bottom:4em;
+    background-color: #EBE8E1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    position:relative;
+}
+#titulo{
+    width: 100%;
+    height:70px ;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    position:absolute;
+    top: 0px;
+}
+#chat{
+    margin-top: 50px;
+    width: 100%;
+    
+}
+#cont-chat{
+    /*width:50%;*/
+    border-radius: 15px;
+    /*box-shadow:  0px 0px 30px #D4CAC6;*/
+    margin-bottom: 5px;
+}
+#mnsje{
+    width: 100%;
+    background-color: white;
+    box-shadow:  0px 0px 10px #D4CAC6;
+    border-radius: 15px;
+    position:absolute;
+    padding: 1%;
+    bottom: 0px;
+    display: flex;
+    margin-bottom: 1px;
+}
+#enviar{
+    height: 60px;
+    margin-left: 5px;
+}
+#contenedormensajes{
+    overflow: hidden;
+    margin-top: 3em;
+    height:535px;
+    overflow-y: scroll;
+    padding: 15px;
+}
+#contenedormensajes::-webkit-scrollbar{
+    width: 0px;
+    background-color: white;
+}
+div{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+textArea{
+    height: 20px;
+}

@@ -1,0 +1,27 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#diario{
+    background-color: #EBE8E1;
+    border-radius: 15px;
+    margin: 5px;
+}
+#cont_dia{
+    width: 550px;
+    height: 600px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+#navbar{
+    background-color:gainsboro;
+}
+#tablita_si{
+    width: 100%;
+    height: 500px ;
+}
+body,div{
+    font-family: 'Nunito', sans-serif;
+}

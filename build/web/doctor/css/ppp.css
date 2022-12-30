@@ -1,0 +1,153 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body, div{
+    font-family: 'Nunito', sans-serif;
+}
+#yep{
+    display: none;
+}
+#wakawaka{
+    width: 500px;
+    margin-left: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+  
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #9AB7C1;
+    border-radius: 10px;
+}
+#sis{
+    height:730px ;
+    width:100%; 
+    overflow: hidden;
+    position: relative;
+}
+#degra{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 255, 0), rgba(255, 0, 0, 0), white);
+    z-index: 1;
+    
+}
+#pagina_abajo{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#sis h1{
+    font-size: 200px;
+    
+}
+#sis a{
+    text-decoration: none;
+}
+#titulo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.img{
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    top: -200px;
+}
+#forms_citas_cont{
+    margin-top: 50px;
+    height: 600px;
+}
+
+#forms_citas{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 15px;
+    background-color: #91A4EE;
+    background-color: #87B7BA;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2391AADD'/%3E%3Cstop offset='1' stop-color='%2387B7BA'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23C7EFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23C7EFFF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+}
+#sis{
+    /* height:800px ;
+     background-color: red;
+     background-image: url("https://w.wallhaven.cc/full/g8/wallhaven-g8peql.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:center;
+     width:100%; */
+}
+#menu_op a{
+    width: 100%;
+}
+#wakamalla{
+    width: 50%
+}
+
+#calendario_fondo{
+    margin-top:70px; 
+    width: 60%;
+    height: 550px;
+    box-shadow:  0px 0px 30px #D4CAC6;
+    border-radius: 15px;
+}
+
+button {
+    margin: 20px;
+}
+.custom-btn {
+    width: 210px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+#tarjeta_psicologo{
+    display: flex;
+    border-radius: 15px;
+    background-color: #EBE8E1;
+    position: relative;
+    height: 70px;
+    margin-bottom: 15px;
+    
+}
+#tarjeta_psicologo p{
+    margin-left:10px;
+}
+
+#paciente{
+    width: 80%;
+    padding: 3%;
+    height: 40%;
+    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+    border-radius: 10px;
+}
+#paciente_cont{
+    
+}

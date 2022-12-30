@@ -1,0 +1,44 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#izq{
+}
+#gride{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /*grid-template-columns: 33% 33% 33%;*/
+    grid-template-rows: 8% 23% 23% 23%;
+}
+#tit_nom{
+    width: 300px;
+    background-color: #DAC6C5;
+    border-radius: 15px;
+}
+.cont_btn{
+    height: 90px;
+    border-radius: 15px;
+}
+#der{
+    height:680px;
+    
+}
+
+#precon{
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    background-color: #EBE8E1;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 15px;
+}
+#preent{
+    height: 500px;
+    overflow: hidden;
+    overflow-y:scroll;
+}
+body, div{
+    font-family: 'Nunito', sans-serif;
+}

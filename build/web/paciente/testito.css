@@ -1,0 +1,52 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    
+}
+div{
+    font-family: 'Nunito', sans-serif;
+}
+#fond{
+    margin-top:4em;
+    background-color:#EBE8E1 ;
+    border-radius: 10px;
+    margin-bottom:4em;
+    height: 600px;
+     box-shadow: 0px 0px 10px gray;
+}
+
+#opciones{
+    height: 680px;
+    display: grid;
+    grid-template-columns:33.3% 33.3% 33.3%;
+    grid-template-rows:33% 33% 33%;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo h1{
+    font-size: 4rem;
+    margin-right: 20px;
+}
+#desc p{
+     font-size: 1.3rem;
+     padding: 3%;
+}
+pre-ent{
+    
+}
+.btn_op{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.card-footer{
+    height: 70px;
+}
+

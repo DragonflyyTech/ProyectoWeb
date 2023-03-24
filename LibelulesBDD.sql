@@ -6,7 +6,7 @@ use psyche;
 
 create table pacientes(id_pac int primary key not null auto_increment, 
 						nom_pac varchar(20),
-                        correo_pac varchar(25),
+                        correo_pac varchar(30),
                         alias_pac varchar(20),
                         edad_pac int,
                         password_pac varchar(10));
@@ -15,8 +15,10 @@ create table doctores(id_doc int primary key not null auto_increment,
 						nom_doc varchar(20),
                         edad_doc int, 
                         alias_doc varchar(20),
+                        correo_doc varchar(30),
+                        cedula_doc varchar(9),
+                        esp_doc varchar(35),
                         password_doc varchar(10));
-
 
 create table doc_pac(id_relacionDP int primary key not null auto_increment,
 					id_pac int,

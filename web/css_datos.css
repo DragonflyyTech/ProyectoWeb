@@ -16,6 +16,14 @@ body{
     background-color: #EBE8E1;
     
 }
+.forms{
+    width: 100%;
+    padding:3%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: #EBE8E1;
+}
 .centrado{
     display: flex;
     justify-content: center;

@@ -22,8 +22,9 @@ public Base(){
     //agregar datos para conectarse
    this.usrBD = "root";
    //this.passBD = "12345678";
-   this.passBD = "n0m3l0";
-   this.urlBD = "jdbc:mysql://localhost:3308/psyche";
+   //this.passBD = "n0m3l0";
+   this.passBD = "246810";
+   this.urlBD = "jdbc:mysql://localhost:3306/psyche";
    this.driverClassName = "com.mysql.jdbc.Driver";//inicializar driver
 }
 

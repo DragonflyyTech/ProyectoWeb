@@ -6,6 +6,7 @@
 body{
     background-color: #EBE8E1;
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
 }
 #navbar{
     background-color: white;
@@ -16,7 +17,7 @@ body{
     
 }
 #derecha{
-    height: 700px;
+    height: 92.8vh;
 }
 #login{
     background-color: white;

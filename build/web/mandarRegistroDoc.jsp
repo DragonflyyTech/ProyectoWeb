@@ -23,6 +23,9 @@
                     String varpass = request.getParameter("pass");
                     String varalias = request.getParameter("alias");
                     String varbrith = request.getParameter("brith");
+                    String varemail = request.getParameter("email");
+                    String varced = request.getParameter("num_ced");
+                    String varesp = request.getParameter("esp");
                     
                     if (!varnomb_usuer.equals("") && !varpass.equals("")&& !varalias.equals("") &&  !varbrith.equals("")) {
                         //se valida que tengan datos los campos
@@ -30,7 +33,7 @@
                         Base bd = new Base();
                         try {
                             bd.conectar();
-                            String strQry = "insert into doctores(nom_doc, edad_doc,alias_doc,password_doc) value ('" + varnomb_usuer + "','" + varbrith + "','" + varalias + "','" + varpass + "');";
+                            String strQry = "insert into doctores(nom_doc, edad_doc,alias_doc,correo_doc,cedula_doc,esp_doc,password_doc) value ('" + varnomb_usuer + "','" + varbrith + "','" + varalias + "','" + varemail + "','" + varced + "','" + varesp + "','" + varpass + "');";
                             out.print(strQry);
 
                             int resultadoInsert = bd.insertar(strQry);

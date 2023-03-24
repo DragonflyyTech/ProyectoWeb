@@ -9,10 +9,10 @@ and open the template in the editor.
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
-        
+
         <title>Registro</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="rec-graf/css/css_datos.css">
+        <link rel="stylesheet" href="css_datos.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- bootstrap-->
@@ -36,6 +36,17 @@ and open the template in the editor.
                 background-color: white;
             }
         </style>
+        
+        <script>
+function validarInput1() {
+  var input = document.getElementById("nomb_usuer").value;
+  var regex = /^[A-Za-z\s]+$/;
+  if (!regex.test(input)) {
+    alert("Solo se permiten letras mayúsculas y minúsculas.");
+    document.getElementById("nomb_usuer").value = "";
+  }
+}
+</script>
 
     </head>
     <body>
@@ -61,16 +72,11 @@ and open the template in the editor.
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#"><b>Sobre nosotros</b></a>
                         </li>
-
-
-                        <!--<li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>-->
                     </ul>
                 </div>
             </div>
         </nav>
-         <div class="contenedor centrado">
+        <div class="forms centrado">
             <div id="formulario" class="centrado">
 
                 <form name="datos" method="post" action="mandarRegistroDoc.jsp">
@@ -80,22 +86,47 @@ and open the template in the editor.
                     <table id="tablita" border="0" class="centrado">
                         <tr>
                             <th><div><label>Nombre de Usuario</label>
-                                    <input id="nomb_usuer" type="text" name="nomb_usuer"  maxlength="20"  class="form-control inouts" required/></div></th>
+                                    <input id="nomb_usuer" type="text" name="nomb_usuer"  maxlength="20"  class="form-control inouts" onkeyup="validarInput1()" required/></div></th>
 
                         </tr>
                         <tr>
                             <th><div><label>Contraseña</label>
-                                    <input id="pass" type="password" name="pass" maxlength="10"   class="inouts form-control " required/></div></th>
+                                    <input id="pass" type="password" name="pass" maxlength="10"  class="inouts form-control " required/></div></th>
 
                         </tr>
                         <tr>
-                            <th><div><label>Nombre</label>
+                            <th><div><label>Correo Electrónico</label>
+                                    <input id="email" type="email" name="email" maxlength="30"  class="inouts form-control "  required/></div></th>
+
+                        </tr>
+                        <tr>
+                            <th><div><label>alias</label>
                                     <input id="alias" type="text" name="alias" maxlength="20"  class="inouts form-control " required/></div></th>
 
                         </tr>
                         <tr>
                             <th><div><label>Edad</label>
                                     <input id="brith" type="number" name="brith"  class="inouts form-control "  required/></div></th>
+
+                        </tr>
+                        <tr>
+                            <th><div style="display: flex; flex-direction: column;">
+                                    <label>Especialidad</label>
+                                    <select id="esp" name="esp">
+                                        <option value="Conductismo">Conductismo</option>
+                                        <option value="cognitiva">cognitiva</option>
+                                        <option value="Psicodinámica">Psicodinámica</option>
+                                        <option value="Humanista">Humanista</option>
+                                        <option value="Evolutiva">Evolutiva</option>
+                                        <option value="Neuropsicología">Neuropsicología</option>
+                                        <option value="Sociocultural" selected="">Sociocultural</option>
+                                    </select>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><div><label>Numero de cedula</label>
+                                    <input id="num_ced" type="number" name="num_ced" maxlength="9"  class="inouts form-control " required/></div></th>
 
                         </tr>
                         <tr class="centrado">

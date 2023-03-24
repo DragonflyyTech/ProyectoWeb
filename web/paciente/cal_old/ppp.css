@@ -1,0 +1,310 @@
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.card-title{
+    font-weight: bold
+}
+#yep{
+    display: none;
+}
+#wakawaka{
+    width: 500px;
+    margin-left: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+  
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #9AB7C1;
+    border-radius: 10px;
+}
+#sis{
+    height:730px ;
+    width:100%; 
+    overflow: hidden;
+    position: relative;
+}
+#degra{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 255, 0), rgba(255, 0, 0, 0), white);
+    z-index: 1;
+    
+}
+#pagina_abajo{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#sis h1{
+    font-size: 200px;
+    
+}
+#sis a{
+    text-decoration: none;
+}
+#titulo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.img{
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    top: -300px;
+}
+#forms_citas_cont{
+    margin-top: 50px;
+}
+#forms_citas_cont{
+    height: 400px;
+}
+#forms_citas{
+    width: 100%;
+    height: 100%;
+    box-shadow:  0px 0px 30px #D4CAC6;
+    border-radius: 15px;
+    background-color: #91A4EE;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%237589d1' fill-opacity='0.46'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.46'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+#sis{
+    /* height:800px ;
+     background-color: red;
+     background-image: url("https://w.wallhaven.cc/full/g8/wallhaven-g8peql.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:center;
+     width:100%; */
+}
+#menu_op a{
+    width: 100%;
+}
+#wakamalla{
+    width: 50%
+}
+
+#calendario_fondo{
+    margin-top:70px; 
+    width: 60%;
+    height: 550px;
+    box-shadow:  0px 0px 30px #D4CAC6;
+    border-radius: 15px;
+}
+
+button {
+    margin: 20px;
+}
+.custom-btn {
+    width: 210px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-5 {
+    /*width: 130px;
+    height: 40px;*/
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+    background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+    color: #f0094a;
+    background: transparent;
+    box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #f0094a;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+.btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+
+.btn-15 {
+    background: #b621fe;
+    border: none;
+    z-index: 1;
+}
+.btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #663dff;
+    border-radius: 5px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+.btn-15:hover {
+    color: #fff;
+}
+.btn-15:hover:after {
+    left: 0;
+    width: 100%;
+}
+.btn-15:active {
+    top: 2px;
+}
+.btn-14 {
+    background: rgb(255,151,0);
+    border: none;
+    z-index: 1;
+}
+.btn-14:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+.btn-14:hover {
+    color: #000;
+}
+.btn-14:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+.btn-14:active {
+    top: 2px;
+}
+
+.btn-3 {
+    background: rgb(0,172,238);
+    background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+
+}
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(2,126,251,1);
+    transition: all 0.5s ease;
+}
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-3:hover{
+    background: transparent;
+    box-shadow: none;
+}
+.btn-3:hover:before {
+    height: 100%;
+}
+.btn-3:hover:after {
+    width: 100%;
+}
+.btn-3 span:hover{
+    color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+}
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-3 span:hover:before {
+    height: 100%;
+}
+.btn-3 span:hover:after {
+    width: 100%;
+}
+#tarjeta_psicologo{
+    display: flex;
+    border-radius: 15px;
+    background-color: #EBE8E1;
+    position: relative;
+    height: 70px;
+    margin-bottom: 15px;
+    
+}
+#tarjeta_psicologo p{
+    margin-left:10px;
+}

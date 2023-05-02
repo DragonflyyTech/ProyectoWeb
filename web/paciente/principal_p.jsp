@@ -13,7 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <!-- css personalizado-->
-        <link href="css/ppp.css" rel="stylesheet">
+        <link href="ppp.css" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,32 +23,32 @@
 
     <body>
         <%
-        try{
-        HttpSession miSessiondelUsuario = (HttpSession) request.getSession();
-        int idPac = (int) (miSessiondelUsuario.getAttribute("idPer") == null ? 0 : miSessiondelUsuario.getAttribute("idPer"));
-        String Nombre = miSessiondelUsuario.getAttribute("NombrePac").toString();
+            try {
+                HttpSession miSessiondelUsuario = (HttpSession) request.getSession();
+                int idPac = (int) (miSessiondelUsuario.getAttribute("idPer") == null ? 0 : miSessiondelUsuario.getAttribute("idPer"));
+                String Nombre = miSessiondelUsuario.getAttribute("NombrePac").toString();
 
-        if (idPac < 1) {
-            response.sendRedirect("index.html");
-        }
+                if (idPac < 1) {
+                    response.sendRedirect("index.html");
+                }
 
-        String alias = "";
-        String correo = "";
-        String edad = "";
-        
-        int conexion = 0;
+                String alias = "";
+                String correo = "";
+                String edad = "";
 
-        Base bd = new Base();
-        bd.conectar();
-        
-        String strQry = "select * from pacientes where id_pac = '" + idPac + "'";
-        ResultSet rsDatosPer = bd.consulta(strQry);
+                int conexion = 0;
 
-        if (rsDatosPer.next()) {
-            correo = rsDatosPer.getString(3);
-            alias = rsDatosPer.getString(2);
-            edad = rsDatosPer.getString(5);
-        }
+                Base bd = new Base();
+                bd.conectar();
+
+                String strQry = "select * from pacientes where id_pac = '" + idPac + "'";
+                ResultSet rsDatosPer = bd.consulta(strQry);
+
+                if (rsDatosPer.next()) {
+                    correo = rsDatosPer.getString(3);
+                    alias = rsDatosPer.getString(2);
+                    edad = rsDatosPer.getString(5);
+                }
         %>
         <!-- bootstrap js-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
@@ -102,50 +102,57 @@
             </div>
             <div class="col-sm12 col-md-12 col-lg-12 col-xl-12" id="pagina_abajo"> 
                 <div id="forms_citas_cont" class="centrado p-4">
-                    <div id="forms_citas" class="container">
-                        <div class="centrado" id="3xl3">
-                            <img id="img1"src="css/Psychologist-pana.png">  
-                        </div>
-                        <div id="menu_op" class="container" >
-                            <div class="row">
-                                <div class="col-sm12 col-md-6 col-lg-3 col-xl-3 p-4">
-                                    <div class="card" style="width:100%;">
-                                        <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
-                                            <h4 class="card-title" >Test</h4>
-                                            <h6 class="card-subtitle mb-2 text-muted">Realizar cuestionarios</h6>
-                                            <p class="card-text">Desde cuestionarios para saber si cuenta con algun problema mental, hasta un prediagnostico.</p>
-                                            <button class="custom-btn btn-5" onclick="location.href = 'Test.jsp'"><h4>Iniciar tests</h4></button>
+                    <div id="forms_citas" class="container p-4">
+                        <div class="row"> 
+                            <div class="col-sm12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="centrado" id="3xl3">
+                                    <img id="img1"src="css/Psychologist-pana.png">  
+                                </div>
+                            </div >
+                            <div class="col-sm12 col-md-12 col-lg-6 col-xl-6">
+                                <div id="menu_op" class="container p-3" >
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="card" style="width:110%;">
+                                                <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
+                                                    <h4 class="card-title" >Test</h4>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Realizar cuestionarios</h6>
+                                                    <p class="card-text">Desde cuestionarios para saber si cuenta con algun problema mental, hasta un prediagnostico.</p>
+                                                    <button class="custom-btn btn-5" onclick="location.href = 'Test.jsp'"><h4>Iniciar tests</h4></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card" style="width:110%;">
+                                                <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
+                                                    <h4 class="card-title">Diario</h4>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Llevar una bitácora</h6>
+                                                    <p class="card-text">Puedes registrar todos tus dias y como te has sentido, para que su doctor le de seguimiento.</p>
+                                                    <button class="custom-btn btn-15" onclick="location.href = 'diario.jsp'"><h4>Escribir!</h4></button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm12 col-md-6 col-lg-3 col-xl-3 p-4">
-                                    <div class="card" style="width:100%;">
-                                        <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
-                                            <h4 class="card-title">Diario</h4>
-                                            <h6 class="card-subtitle mb-2 text-muted">Llevar una bitácora</h6>
-                                            <p class="card-text">Puedes registrar todos tus dias y como te has sentido, para que su doctor le de seguimiento.</p>
-                                            <button class="custom-btn btn-15" onclick="location.href = 'diario.jsp'"><h4>Escribir!</h4></button>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="card" style="width:110%;">
+                                                <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
+                                                    <h4 class="card-title">Chat</h4>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Iniciar chat</h6>
+                                                    <p class="card-text">Si te sientes abrumado o triste siempre puedes hablar con un especialista, puedes enviarle un mensaje por aquí.</p>
+                                                    <button class="custom-btn btn-14" onclick="location.href = 'Chat.jsp'"><h4>Chatear</h4></button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm12 col-md-6 col-lg-3 col-xl-3 p-4">
-                                    <div class="card" style="width:100%;">
-                                        <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
-                                            <h4 class="card-title">Chat</h4>
-                                            <h6 class="card-subtitle mb-2 text-muted">Iniciar chat</h6>
-                                            <p class="card-text">Si te sientes con la nesecidad de hablar con tu doctor, puedes enviarle un mensaje.</p>
-                                            <button class="custom-btn btn-14" onclick="location.href = 'Chat.jsp'"><h4>Chatear</h4></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm12 col-md-6 col-lg-3 col-xl-3 p-4">
-                                    <div class="card" style="width:100%;">
-                                        <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
-                                            <h4 class="card-title">Citas</h4>
-                                            <h6 class="card-subtitle mb-2 text-muted">Agendar citas</h6>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <button  class="btn btn-primary " onclick="location.href = 'cal_old/calendario.jsp'" ><span><h5>Agendar una cita</h5></span></button>
-                                            <!-- class="custom-btn btn-3"  el boton de arriba va en h4 y la clase que debe llevar es la que esta aqui en este comentario :))-->
+                                        <div class="col-6">
+                                            <div class="card" style="width:110%;">
+                                                <div class="card-body" style="box-shadow: 0px 0px 60px lightgray;">
+                                                    <h4 class="card-title">Citas</h4>
+                                                    <h6 class="card-subtitle mb-2 text-muted">Agendar citas</h6>
+                                                    <p class="card-text">La organizacion siempre te ayudara a manejar mejor tus tiempos y tus emociones, para eso aqui tenemos un calendario.</p>
+                                                    <button  class="custom-btn btn-3 " onclick="location.href = 'cal_old/calendario.jsp'" ><span style="margin-top:6px; "><h5>Agendar una cita</h5></span></button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -197,25 +204,24 @@
             }
         </script>
 
-        <% 
-String strQry4 = "select * from doc_pac where id_pac = '"+idPac+"';";
-ResultSet conexiones = bd.consulta(strQry4);
-if (conexiones.next()) {
-conexion = conexiones.getInt(1);
-}else{
+        <%
+            String strQry4 = "select * from doc_pac where id_pac = '" + idPac + "';";
+            ResultSet conexiones = bd.consulta(strQry4);
+            if (conexiones.next()) {
+                conexion = conexiones.getInt(1);
+            } else {
         %>
         <script>
             sip();
         </script>
 
         <%
-                                  
-        int num_pac = 0 ;
-                    
-        String strQry2 = "select * from doctores";
-        ResultSet relaciones = bd.consulta(strQry2);   
-                    
-}%>
+                int num_pac = 0;
+
+                String strQry2 = "select * from doctores";
+                ResultSet relaciones = bd.consulta(strQry2);
+
+            }%>
 
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
@@ -260,7 +266,44 @@ conexion = conexiones.getInt(1);
                 </div>-->
             </div>
         </div>
-        <%}catch (Exception ex) {%>
+        <footer>
+            <div class="centrado" style="height: 90%;">
+                <div class="row" style="width: 90%; ">
+                    <div class="col-6 row">
+                        <div class="col-6">
+                            a
+                        </div>
+                        <div class="col-6">
+                            e
+                        </div>
+                    </div>
+                    <div class="col-6 centrado p-4">
+                        <div class="card" style="width:50%;">
+                            <div class="card-body">
+                                <form action="https://formsubmit.co/dragonflytech4@gmail.com" method="POST">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Correo</label>
+                                        <div id="correotxt" class="form-text">En este correo recivira la respuesta a su comentario.</div>
+                                        <input type="email" class="form-control" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                                        <input type="hidden" name="_autoresponse" value="Su solicitud ha sido recivida, la responderemos en breve!">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Comentario" class="form-label">Comentario</label>
+                                        <textarea class="form-control" id="Comentario" rows="3"></textarea>
+                                    </div>
+                                    <input type="hidden" name="_next" value="principal_p.jsp">
+                                    
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+        <%} catch (Exception ex) {%>
         <div class="container">
             <div class="centrado">
                 <h1><%out.print("se ha cerrado la sesion");%></h1>  
@@ -270,13 +313,6 @@ conexion = conexiones.getInt(1);
         <%
             }
         %>
-        <footer>
-            <div class="centrado" style="height: 100%;">
-                <h1>
-                    todos los derechos reservados
-                </h1>
-            </div>
-        </footer>
     </body>
 
 </html>

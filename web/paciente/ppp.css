@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 10px;
 }
 #sis{
-    height:730px ;
+    height:90vh ;
     width:100%; 
     overflow: hidden;
     position: relative;
@@ -320,7 +320,7 @@ button {
 }
 
 footer{
-    height: 150px;
+    height:auto;
     background-color:#D4CAC6;
 }
 #tostada{

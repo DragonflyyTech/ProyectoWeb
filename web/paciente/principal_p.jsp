@@ -73,7 +73,7 @@
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="Chat.jsp">Chat</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item disabled" href="Calendario.jsp" >Citas</a></li>
+                                <li><a class="dropdown-item" href="calendario/index.jsp" >Citas</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -278,11 +278,11 @@
                         </div>
                     </div>
                     <div class="col-6 centrado p-4">
-                        <div class="card" style="width:50%;">
+                        <div class="card" style="width:100%;">
                             <div class="card-body">
                                 <form action="https://formsubmit.co/dragonflytech4@gmail.com" method="POST">
                                     <div class="mb-3">
-                                        <label for="email" class="form-label">Correo</label>
+                                        <label for="email" class="form-label">Quejas y comentarios</label>
                                         <div id="correotxt" class="form-text">En este correo recivira la respuesta a su comentario.</div>
                                         <input type="email" class="form-control" name="email" placeholder="Email Address" aria-describedby="emailHelp">
                                         <input type="hidden" name="_autoresponse" value="Su solicitud ha sido recivida, la responderemos en breve!">
@@ -291,7 +291,7 @@
                                         <label for="Comentario" class="form-label">Comentario</label>
                                         <textarea class="form-control" id="Comentario" rows="3"></textarea>
                                     </div>
-                                    <input type="hidden" name="_next" value="principal_p.jsp">
+                                    <input type="hidden" name="_next" value="paciente/principal_p.jsp">
                                     
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>

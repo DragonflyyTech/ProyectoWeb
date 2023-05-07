@@ -12,7 +12,7 @@ and open the template in the editor.
         
         <title>Registro</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css_datos.css">
+        <link rel="stylesheet" href="css-in/css_datos.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- bootstrap-->
@@ -80,7 +80,7 @@ and open the template in the editor.
                         <tr>
          
                             <th><div><label>Nombre de Usuario</label>
-                                <input id="nomb_usuer" type="text" name="nomb_usuer" maxlength="20"  class="inouts form-control"  required/></div></th>
+                                <input id="nomb_usuer" type="text" name="nomb_usuer" maxlength="20"  class="inouts form-control" oninput="this.value =this.value.replace(/[^a-zA-Z0-9\s]/g, '')" required/></div></th>
                         <tr>
                             <th><div><label>Correo Electrónico</label>
                                 <input id="email" type="email" name="email" maxlength="30"  class="inouts form-control "  required/></div></th>
@@ -93,12 +93,12 @@ and open the template in the editor.
                         </tr>
                         <tr>
                             <th><div><label>Alias</label>
-                                <input id="alias" type="text" name="alias" maxlength="20"  class="inouts form-control " required/></div></th>
+                                <input id="alias" type="text" name="alias" maxlength="20"  class="inouts form-control " oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s]/g, '')" required/></div></th>
 
                         </tr>
                         <tr>
                             <th><div><label>Edad</label>
-                                <input id="brith" type="number" name="brith"  class="inouts form-control "  required/></div></th>
+                                <input id="brith" type="number" name="brith"  class="inouts form-control" min="15" max="90" step="1" required/></div></th>
 
                         </tr>
                         <tr class="centrado">

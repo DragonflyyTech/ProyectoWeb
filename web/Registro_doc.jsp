@@ -12,7 +12,7 @@ and open the template in the editor.
 
         <title>Registro</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css_datos.css">
+        <link rel="stylesheet" href="css-in/css_datos.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- bootstrap-->
@@ -37,16 +37,6 @@ and open the template in the editor.
             }
         </style>
         
-        <script>
-function validarInput1() {
-  var input = document.getElementById("nomb_usuer").value;
-  var regex = /^[A-Za-z\s]+$/;
-  if (!regex.test(input)) {
-    alert("Solo se permiten letras mayúsculas y minúsculas.");
-    document.getElementById("nomb_usuer").value = "";
-  }
-}
-</script>
 
     </head>
     <body>
@@ -86,7 +76,7 @@ function validarInput1() {
                     <table id="tablita" border="0" class="centrado">
                         <tr>
                             <th><div><label>Nombre de Usuario</label>
-                                    <input id="nomb_usuer" type="text" name="nomb_usuer"  maxlength="20"  class="form-control inouts" onkeyup="validarInput1()" required/></div></th>
+                                    <input id="nomb_usuer" type="text" name="nomb_usuer"  maxlength="20"  class="form-control inouts" oninput="this.value =this.value.replace(/[^a-zA-Z0-9\s]/g, '')" required/></div></th>
 
                         </tr>
                         <tr>
@@ -101,12 +91,12 @@ function validarInput1() {
                         </tr>
                         <tr>
                             <th><div><label>alias</label>
-                                    <input id="alias" type="text" name="alias" maxlength="20"  class="inouts form-control " required/></div></th>
+                                    <input id="alias" type="text" name="alias" maxlength="20"  class="inouts form-control " oninput="this.value =this.value.replace(/[^a-zA-Z0-9\s]/g, '')" required/></div></th>
 
                         </tr>
                         <tr>
                             <th><div><label>Edad</label>
-                                    <input id="brith" type="number" name="brith"  class="inouts form-control "  required/></div></th>
+                                    <input id="brith" type="number" name="brith"  class="inouts form-control " min="23" max="90" step="1" required/></div></th>
 
                         </tr>
                         <tr>

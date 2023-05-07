@@ -6,7 +6,7 @@
 <html>
     <head>
         <title>Inicio</title>
-        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1787/1787077.png" type="image/gif" />
+        <link rel="shortcut icon" href="../logo psyche.png" type="image/gif" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- bootstrap-->
@@ -58,6 +58,8 @@
         <!-- barra de navegacion -->
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
+                <img src="../logo psyche.png" alt="Logo" width="35" height="30"
+                     class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 "><h4 style="font-weight: bold"><%=Nombre%></h4></span>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -150,7 +152,7 @@
                                                     <h4 class="card-title">Citas</h4>
                                                     <h6 class="card-subtitle mb-2 text-muted">Agendar citas</h6>
                                                     <p class="card-text">La organizacion siempre te ayudara a manejar mejor tus tiempos y tus emociones, para eso aqui tenemos un calendario.</p>
-                                                    <button  class="custom-btn btn-3 " onclick="location.href = 'cal_old/calendario.jsp'" ><span style="margin-top:6px; "><h5>Agendar una cita</h5></span></button>
+                                                    <button  class="custom-btn btn-3 " onclick="location.href = 'calendario/index.jsp'" ><span style="margin-top:6px; "><h5>Agendar una cita</h5></span></button>
                                                 </div>
                                             </div>
                                         </div>
